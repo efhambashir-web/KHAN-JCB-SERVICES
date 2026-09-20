@@ -171,15 +171,6 @@ header {
     border: 1px solid var(--border);
     background: var(--card);
 }
-.tertiary {
-    color: #111;
-    background: linear-gradient(
-        90deg,
-        var(--primary),
-        var(--secondary),
-         var(--tertiary)
-    );
-
 
 /* HERO MACHINE */
 
