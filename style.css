@@ -172,11 +172,6 @@ header {
     background: var(--card);
 }
 
-.tertiary {
-    color: white;
-    border: 1px solid var(--border);
-    background: var(--card);
-}
 
 /* HERO MACHINE */
 
