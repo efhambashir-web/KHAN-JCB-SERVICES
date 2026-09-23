@@ -43,8 +43,7 @@ function showMessage(service) {
 
 }
 
-
-// BOOKING FORM
+ // BOOKING FORM
 
 const contactForm = document.getElementById("contactForm");
 
@@ -53,11 +52,21 @@ contactForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const location = document.getElementById("location").value;
+    const message = document.getElementById("message").value;
 
-    alert(
-        "Thank you, " + name +
-        "!\n\nYour JCB booking request has been received."
-    );
+    const whatsappMessage =
+        "🚜 Khan JCB Services - New Booking Request%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Phone: " + phone + "%0A" +
+        "Work Location: " + location + "%0A" +
+        "Work Details: " + message;
+
+    const whatsappURL =
+        "https://wa.me/919797029995?text=" + whatsappMessage;
+
+    window.open(whatsappURL, "_blank");
 
     contactForm.reset();
 
